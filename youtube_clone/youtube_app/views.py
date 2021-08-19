@@ -38,6 +38,11 @@ class CommentSection(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
+    def delete(self, request, pk):
+            comment = self.get_object(pk)
+            comment.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+    
 class ReplySection(APIView):
     
     def get(self, request):
@@ -52,6 +57,11 @@ class ReplySection(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
+    def delete(self, request, pk):
+            Reply = self.get_object(pk)
+            Reply.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+    
 class ChannelSection(APIView):
     
     def get(self, request):
@@ -65,3 +75,8 @@ class ChannelSection(APIView):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+    def delete(self, request, pk):
+            Channel = self.get_object(pk)
+            Channel.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
