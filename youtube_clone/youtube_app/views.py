@@ -3,7 +3,7 @@ from .models import Comment, Reply, Video, Channel
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .serializer import CommentSerializer, ReplySerializer
+from .serializer import CommentSerializer, ReplySerializer, VideoSerializer, ChannelSerializer
 from django.http import Http404
 
 
@@ -33,6 +33,20 @@ class CommentSection(APIView):
 
     def post(self, request):
         serializer = CommentSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+class ReplySection(APIView):
+    
+    def get(self, request):
+        comment = Reply.objects.all()
+        serializer = ReplySerializer(comment, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = ReplySerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
