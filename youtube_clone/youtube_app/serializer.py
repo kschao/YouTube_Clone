@@ -1,6 +1,6 @@
 from django.db import models
 from rest_framework import serializers
-from .models import Comment, Reply, Video
+from .models import Channel, Comment, Reply, Video
 
 class CommentSerializer(serializers.ModelSerializer):
     class Meta:
@@ -16,4 +16,10 @@ class VideoSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Video
-        fields = ['id', 'youtube_id', 'title', 'like_video', 'dislike_video']
+        fields = ['title', 'description', 'path', 'datetime', 'user']
+        
+class ChannelSerializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model = Channel
+        fields = ['channel_name', 'subscribers', 'user']
