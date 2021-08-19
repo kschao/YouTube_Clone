@@ -16,7 +16,7 @@ class Video(models.Model):
     title = models.CharField(max_length=50)
     description = models.CharField(max_length=300)
     path = models.CharField(max_length=70)
-    dattime = models.DateTimeField(auto_now=True, blank=False, null=False)
+    datetime = models.DateTimeField(auto_now=True, blank=False, null=False)
     user = models.ForeignKey('auth.user', on_delete=models.CASCADE)
     
 class Channel(models.Model):
