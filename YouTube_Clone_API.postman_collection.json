@@ -1,0 +1,361 @@
+{
+	"info": {
+		"_postman_id": "3c385197-a2af-4c7d-a963-456c4ec32bf8",
+		"name": "YouTube_Clone_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get_All_Related_Videos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/search?q=FiveFingerDeathPunch&type=AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "FiveFingerDeathPunch"
+						},
+						{
+							"key": "type",
+							"value": "AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_All_Related_videos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/search?q=FiveFingerDeathPunch&key=AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "FiveFingerDeathPunch"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_All_Comment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/search?q=FiveFingerDeathPunch&key=AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "FiveFingerDeathPunch"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_All_Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/search?q=FiveFingerDeathPunch&key=AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "FiveFingerDeathPunch"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Comment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/search?q=FiveFingerDeathPunch&key=AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "FiveFingerDeathPunch"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_All_Reply",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/search?q=FiveFingerDeathPunch&key=AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "FiveFingerDeathPunch"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_All_Reply",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/search?q=FiveFingerDeathPunch&key=AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "FiveFingerDeathPunch"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Reply",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/search?q=FiveFingerDeathPunch&key=AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "FiveFingerDeathPunch"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_All_Channel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/search?q=FiveFingerDeathPunch&key=AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "FiveFingerDeathPunch"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_All_Channel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/search?q=FiveFingerDeathPunch&key=AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "FiveFingerDeathPunch"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Channel",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/search?q=FiveFingerDeathPunch&key=AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "FiveFingerDeathPunch"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
